@@ -2,7 +2,20 @@ import { endent, join } from '@dword-design/functions'
 import * as personalData from '@dword-design/personal-data'
 
 export default (locale, config) => {
-  config = { cookies: true, serverData: true, ...config }
+  config = {
+    contact: false,
+    cookies: true,
+    firebaseAnalytics: false,
+    firebaseAuthentication: false,
+    firebaseCloudFirestore: false,
+    firebaseCloudFunctions: false,
+    firebaseCloudStorage: false,
+    googleAnalytics: true,
+    newsletter: false,
+    registration: false,
+    serverData: true,
+    ...config,
+  }
 
   const address = endent`
     ${personalData.name}
