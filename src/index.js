@@ -17,10 +17,10 @@ export default (locale, config) => {
     ...config,
   }
 
-  const address = endent`
-    ${personalData.name}
-    ${personalData.street}
-    ${personalData.postalCode} ${personalData.city}
+  const addressMarkup = endent`
+    ${personalData.name}<br>
+    ${personalData.street}<br>
+    ${personalData.postalCode} ${personalData.city}<br>
     ${locale === 'de' ? 'Deutschland' : 'Germany'}
   `
 
@@ -36,16 +36,16 @@ export default (locale, config) => {
         <p>I. Informationen über uns als Verantwortliche<br>II. Rechte der Nutzer und Betroffenen<br>III. Informationen zur Datenverarbeitung</p>
         <h3>I. Informationen über uns als Verantwortliche</h3>
         <p>Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:</p>
-        <p>${address}</p>
+        <p>${addressMarkup}</p>
         <p>
-          Phone: ${personalData.phoneNumber}<br>
-          Email: ${personalData.email}
+          Telefon: ${personalData.phoneNumber}<br>
+          E-Mail: ${personalData.email}
         </p>
         <p>Datenschutzbeauftragte/r beim Anbieter ist:</p>
-        <p>${address}</p>
+        <p>${addressMarkup}</p>
         <p>
-          Phone: ${personalData.phoneNumber}<br>
-          Email: ${personalData.email}
+          Telefon: ${personalData.phoneNumber}<br>
+          E-Mail: ${personalData.email}
         </p>
         <h3>II. Rechte der Nutzer und Betroffenen</h3>
         <p>Mit Blick auf die nachfolgend noch näher beschriebene Datenverarbeitung haben die Nutzer und Betroffenen das Recht</p>
@@ -70,13 +70,13 @@ export default (locale, config) => {
         <p>I. Information about us as controllers of your data<br>II. The rights of users and data subjects<br>III. Information about the data processing</p>
         <h3>I. Information about us as controllers of your data</h3>
         <p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
-        <p>${address}</p>
+        <p>${addressMarkup}</p>
         <p>
           Phone: ${personalData.phoneNumber}<br>
           Email: ${personalData.email}
         </p>
         <p>The controller's data protection officer is:</p>
-        <p>${address}</p>
+        <p>${addressMarkup}</p>
         <p>
           Phone: ${personalData.phoneNumber}<br>
           Email: ${personalData.email}
@@ -198,14 +198,14 @@ export default (locale, config) => {
           <p>Firebase Authentication ist ein von Google Ireland Limited bereitgestellter Registrierungs- und Anmeldedienst. Um den Anmelde- und Anmeldeprozess zu vereinfachen, kann Firebase Authentication Identitätsdienste von Drittparteien benutzen und die Informationen auf ihrer Plattform speichern.</p>
           <p>Verarbeitete personenbezogene Daten: E-Mail; Konten in den sozialen Netzwerken; Nachname; Nutzername; Passwort; Profilbild; Telefonnummer; Vorname.</p>
           <p>Rechtsgrundlage der Verarbeitung: Vertrag.</p>
-          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy">Datenschutzerklärung.</a></p>
+          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung.</a></p>
           <p>Rechtsgrundlage für die Übermittlung der Daten außerhalb der EU: Von der EU Kommission erlassene Standarddatenschutzklauseln.</p>
           <p>Speicherdauer: Aufbewahrung der Daten für die Dauer des Vertrages.</p>
         `
               : endent`
           <p>Firebase Authentication is a registration and authentication service provided by Google LLC or by Google Ireland Limited, depending on the location Strive is accessed from. To simplify the registration and authentication process, Firebase Authentication can make use of third-party identity providers and save the information on its platform.</p>
           <p>Personal Data processed: email address; username.</p>
-          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
           <p>Category of personal information collected according to CCPA: identifiers.</p>
           <p>This processing constitutes a sale based on the definition under the CCPA. In addition to the information in this clause, the User can find information regarding how to opt out of the sale in the section detailing the rights of Californian consumers.</p>
         `,
@@ -236,13 +236,13 @@ export default (locale, config) => {
           <p>Firebase Cloud Firestore ist ein Webhosting und Backend Dienst, bereitgestellt von Google Ireland Limited.</p>
           <p>Verarbeitete personenbezogene Daten: Nutzungsdaten; verschiedene Datenarten, wie in der Datenschutzerklärung des Dienstes beschrieben.</p>
           <p>Rechtsgrundlage der Verarbeitung: Vertrag.</p>
-          <p>Verarbeitungsort: Irland – <a href="<a href="https://policies.google.com/privacy">Datenschutzerklärung</a>.</p>
+          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung</a>.</p>
           <p>Rechtsgrundlage für die Übermittlung der Daten außerhalb der EU: Von der EU Kommission erlassene Standarddatenschutzklauseln.</p>
         ` // https://www.patientenverfuegung.digital/datenschutzerklaerung
               : endent`
           <p>Firebase Cloud Firestore is a hosting and backend service provided by Google LLC or by Google Ireland Limited, depending on the location Strive is accessed from.</p>
           <p>Personal Data processed: Usage Data; various types of Data as specified in the privacy policy of the service.</p>
-          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
           <p>Category of personal information collected according to CCPA: internet information.</p>
         `, // https://www.striveworkouts.com/privacy/
           ]
@@ -255,14 +255,14 @@ export default (locale, config) => {
           <p>Firebase Cloud Storage ist ein Webhosting Dienst, bereitgestellt von Google Ireland Limited.</p>
           <p>Verarbeitete personenbezogene Daten: Nutzungsdaten; verschiedene Datenarten, wie in der Datenschutzerklärung des Dienstes beschrieben.</p>
           <p>Rechtsgrundlage der Verarbeitung: Vertrag.</p>
-          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy">Datenschutzerklärung</a>.</p>
+          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung</a>.</p>
           <p>Rechtsgrundlage für die Übermittlung der Daten außerhalb der EU: Von der EU Kommission erlassene Standarddatenschutzklauseln.</p>
           <p>Speicherdauer: Aufbewahrung der Daten für die Dauer des Vertrages.</p>
         ` // https://www.patientenverfuegung.digital/datenschutzerklaerung
               : endent`
           <p>Firebase Cloud Storage is a hosting service provided by Google LLC or by Google Ireland Limited, depending on the location Strive is accessed from.</p>
           <p>Personal Data processed: Usage Data; various types of Data as specified in the privacy policy of the service.</p>
-          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy>Privacy Policy</a>.</p>
+          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
           <p>Category of personal information collected according to CCPA: internet information.</p>
         `, // https://www.striveworkouts.com/privacy/
           ]
@@ -275,13 +275,13 @@ export default (locale, config) => {
           <p>Firebase Cloud Functions ist ein Webhosting und Backend Dienst, bereitgestellt von Google Ireland Limited.</p>
           <p>Verarbeitete personenbezogene Daten: Nutzungsdaten; verschiedene Datenarten, wie in der Datenschutzerklärung des Dienstes beschrieben.</p>
           <p>Rechtsgrundlage der Verarbeitung: Vertrag.</p>
-          <p>Verarbeitungsort: Irland – <a href="<a href="https://policies.google.com/privacy">Datenschutzerklärung</a>.</p>
+          <p>Verarbeitungsort: Irland – <a href="<a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung</a>.</p>
           <p>Rechtsgrundlage für die Übermittlung der Daten außerhalb der EU: Von der EU Kommission erlassene Standarddatenschutzklauseln.</p>
         ` // https://www.patientenverfuegung.digital/datenschutzerklaerung
               : endent`
           <p>Firebase Cloud Functions is a hosting and backend service provided by Google LLC or by Google Ireland Limited, depending on the location Strive is accessed from.</p>
           <p>Personal Data processed: Usage Data; various types of Data as specified in the privacy policy of the service.</p>
-          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
           <p>Category of personal information collected according to CCPA: internet information.</p>
         `, // https://www.striveworkouts.com/privacy/
           ]
@@ -295,7 +295,7 @@ export default (locale, config) => {
         <p>Usage and user-related information, such as IP address, place, time, or frequency of your visits to our website will be transmitted to a Google server in the United States and stored there. However, we use Google Analytics with the so-called anonymization function, whereby Google truncates the IP address within the EU or the EEA before it is transmitted to the US.</p>
         <p>The data collected in this way is in turn used by Google to provide us with an evaluation of visits to our website and what visitors do once there. This data can also be used to provide other services related to the use of our website and of the internet in general.</p>
         <p>Google states that it will not connect your IP address to other data. In addition, Google provides further information with regard to its data protection practices at</p>
-        <p><a href="https://www.google.com/intl/de/policies/privacy/partners" target="_blank" rel="noopener">https://www.google.com/intl/de/policies/privacy/partners,</a></p>
+        <p><a href="https://www.google.com/intl/de/policies/privacy/partners" target="_blank" rel="noopener">https://www.google.com/intl/de/policies/privacy/partners</a>,</p>
         <p>including options you can exercise to prevent such use of your data.</p>
         <p>In addition, Google offers an opt-out add-on at</p>
         <p><a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener">https://tools.google.com/dlpage/gaoptout?hl=en</a></p>
@@ -311,18 +311,20 @@ export default (locale, config) => {
           <p>Google Analytics für Firebase oder Firebase Analytics ist ein Analyse-Dienst von Google Ireland Limited.</p>
           <p>Weitere Informationen zur Verwendung von Daten bei Google sind in der Partner-Richtlinie von Google einsehbar. Firebase Analytics kann Daten mit anderen von Firebase bereitgestellten Tools wie Crash Reporting, Authentication, Remote Config oder Notifications gemeinsam nutzen. Der Nutzer kann diese Datenschutzerklärung überprüfen, um eine ausführliche Erläuterung zu den anderen vom Eigentümer verwendeten Tools zu finden. Diese Website verwendet Identifikatoren für mobile Geräte und Cookie-ähnliche Technologien für die Ausführung des Google Analytics for Firebase-Dienstes. Nutzer können sich über die entsprechenden Geräteeinstellungen mobiler Geräte von bestimmten Firebase-Funktionen abmelden, wie etwa über die Werbeeinstellungen für mobile Geräte, oder indem sie gegebenenfalls den Anweisungen anderer Abschnitte dieser Datenschutzrichtlinie bezüglich Firebase folgen.</p>
           <p>Verarbeitete personenbezogene Daten: Anwendung-Ausführungen; Anwendung-Updates; Anzahl der Nutzer; Anzahl der Sitzungen; App-Starts; Betriebssysteme; Eindeutige Gerätekennzeichnung für Werbung (Google-Werbe-ID oder IDFA, beispielsweise); Geräteinformationen; In-App-Käufe; Nutzungsdaten; Region; Sitzungsdauer; Tracker.</p>
-          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy">Datenschutzerklärung</a>.</p>
+          <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung</a>.</p>
         ` // https://www.unifox.de/datenschutzerklarung.html
               : endent`
           <p>Google Analytics for Firebase or Firebase Analytics is an analytics service provided by Google LLC or by Google Ireland Limited, depending on the location Strive is accessed from.</p>
-          <p>In order to understand Google's use of Data, consult <a href="https://www.google.com/policies/privacy/partners/>Google's partner policy</a>. Firebase Analytics may share Data with other tools provided by Firebase, such as Crash Reporting, Authentication, Remote Config or Notifications. The User may check this privacy policy to find a detailed explanation about the other tools used by the Owner. Strive uses identifiers for mobile devices and technologies similar to cookies to run the Firebase Analytics service. Users may opt-out of certain Firebase features through applicable device settings, such as the device advertising settings for mobile phones or by following the instructions in other Firebase related sections of this privacy policy, if available.</p>
+          <p>In order to understand Google's use of Data, consult <a href="https://www.google.com/policies/privacy/partners/" target="_blank">Google's partner policy</a>. Firebase Analytics may share Data with other tools provided by Firebase, such as Crash Reporting, Authentication, Remote Config or Notifications. The User may check this privacy policy to find a detailed explanation about the other tools used by the Owner. Strive uses identifiers for mobile devices and technologies similar to cookies to run the Firebase Analytics service. Users may opt-out of certain Firebase features through applicable device settings, such as the device advertising settings for mobile phones or by following the instructions in other Firebase related sections of this privacy policy, if available.</p>
           <p>Personal Data processed: Application opens; Application updates; device information; geography/region; In-app purchases; launches; number of sessions; operating systems; session duration; Tracker; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); Usage Data.</p>
-          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+          <p>Place of processing: Ireland – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
           <p>Category of personal information collected according to CCPA: identifiers; commercial information; internet information; geolocation data.</p>
         `, // https://www.striveworkouts.com/privacy/
           ]
         : []),
-      '<p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank" rel="noopener">Model Data Protection Statement</a> for <a href="https://www.ratgeberrecht.eu/" target="_blank" rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>',
+      locale === 'de'
+        ? '<p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank" rel="noopener">Muster-Datenschutzerklärung</a> der <a href="https://www.ratgeberrecht.eu/datenschutz/datenschutzerklaerung-generator-dsgvo.html" target="_blank" rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>'
+        : '<p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank" rel="noopener">Model Data Protection Statement</a> for <a href="https://www.ratgeberrecht.eu/" target="_blank" rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>',
     ] |> join('\n')
   )
 }
