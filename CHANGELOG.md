@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/dword-design/get-privacy-policy/compare/v1.0.0...v1.0.1) (2022-01-30)
+
+
+### Bug Fixes
+
+* foo ([773487e](https://github.com/dword-design/get-privacy-policy/commit/773487eef3d9985906f91d0ab41ba1001543e2bc))
+
 # 1.0.0 (2022-01-30)
 
 
