@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/dword-design/get-privacy-policy/compare/v1.0.2...v1.0.3) (2022-02-02)
+
+
+### Bug Fixes
+
+* add gtm ([430daeb](https://github.com/dword-design/get-privacy-policy/commit/430daebbca8b2ee22d94f49b5bd2a8dab91f15a1))
+* foo ([99194c4](https://github.com/dword-design/get-privacy-policy/commit/99194c468bddb27780feccb91aa9c7532061e04f))
+
 ## [1.0.2](https://github.com/dword-design/get-privacy-policy/compare/v1.0.1...v1.0.2) (2022-01-30)
 
 
