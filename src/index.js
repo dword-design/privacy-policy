@@ -322,6 +322,28 @@ export default (locale, config) => {
         `, // https://www.striveworkouts.com/privacy/
           ]
         : []),
+      ...(config.googleTagManager ||
+      config.googleAnalytics ||
+      config.firebaseAnalytics
+        ? [
+            '<h4>Google Tag Manager</h4>',
+            locale === 'de'
+              ? endent`
+                <p>Google Tag Manager ist ein von Google Ireland Limited bereitgestellter Dienst zur Verwaltung von Tags.</p>
+                <p>Verarbeitete personenbezogene Daten: Nutzungsdaten.</p>
+                <p>Verarbeitungsort: Irland – <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung</a>.</p>
+                <p>Rechtsgrundlage für die Übermittlung der Daten außerhalb der EU: Von der EU Kommission erlassene Standarddatenschutzklauseln.</p>
+                <p>Speicherdauer: 18 Monate.</p>
+              `
+              : endent`
+                <p>Google Tag Manager is a service provided by Google LLC or by Google Ireland Limited to manage tags.</p>
+                <p>Personal Data processed: User data.</p>
+                <p>Place of processing: Irland – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
+                <p>Category of personal information collected according to CCPA: internet information.</p>
+                <p>Storage period: 18 months.</p>
+              `,
+          ]
+        : []),
       locale === 'de'
         ? '<p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank" rel="noopener">Muster-Datenschutzerklärung</a> der <a href="https://www.ratgeberrecht.eu/datenschutz/datenschutzerklaerung-generator-dsgvo.html" target="_blank" rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>'
         : '<p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html" target="_blank" rel="noopener">Model Data Protection Statement</a> for <a href="https://www.ratgeberrecht.eu/" target="_blank" rel="noopener">Anwaltskanzlei Weiß &amp; Partner</a></p>',
