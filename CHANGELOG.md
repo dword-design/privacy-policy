@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/dword-design/get-privacy-policy/compare/v1.0.3...v1.0.4) (2023-02-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#13](https://github.com/dword-design/get-privacy-policy/issues/13)) ([815571b](https://github.com/dword-design/get-privacy-policy/commit/815571ba622728c7d0e59f061fbdee7db6f6c91f))
+
 ## [1.0.3](https://github.com/dword-design/get-privacy-policy/compare/v1.0.2...v1.0.3) (2022-02-02)
 
 
