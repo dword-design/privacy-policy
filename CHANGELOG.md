@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/dword-design/get-privacy-policy/compare/v1.0.4...v1.0.5) (2023-03-13)
+
+
+### Bug Fixes
+
+* foo ([79b018b](https://github.com/dword-design/get-privacy-policy/commit/79b018b5863b96c48845ce89dd68e67abe06512b))
+* revert to cjs ([1da8be1](https://github.com/dword-design/get-privacy-policy/commit/1da8be1a9582aea2e165dcb103bb3ad913bdeabe))
+
 ## [1.0.4](https://github.com/dword-design/get-privacy-policy/compare/v1.0.3...v1.0.4) (2023-02-15)
 
 
