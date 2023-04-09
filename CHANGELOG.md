@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/dword-design/get-privacy-policy/compare/v1.0.5...v1.0.6) (2023-04-09)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4.1.7 ([f1e83a0](https://github.com/dword-design/get-privacy-policy/commit/f1e83a067ce83f2c397c9705d9858f668c36becb))
+
 ## [1.0.5](https://github.com/dword-design/get-privacy-policy/compare/v1.0.4...v1.0.5) (2023-03-13)
 
 
