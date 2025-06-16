@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/dword-design/privacy-policy/compare/v2.0.0...v2.0.1) (2025-06-16)
+
+
+### Bug Fixes
+
+* opt out container classes for matomo ([c035dfa](https://github.com/dword-design/privacy-policy/commit/c035dfa9d064860255499f633fea4bd2512212bb))
+
 # [2.0.0](https://github.com/dword-design/privacy-policy/compare/v1.0.6...v2.0.0) (2025-06-16)
 
 
