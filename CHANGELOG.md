@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/dword-design/privacy-policy/compare/v1.0.6...v2.0.0) (2025-06-16)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#24](https://github.com/dword-design/privacy-policy/issues/24)) ([dfbb064](https://github.com/dword-design/privacy-policy/commit/dfbb064ff1b426c9f2711efda75b9ce0fb8ecbd8))
+
+
+### BREAKING CHANGES
+
+* is now a component
+* set all config values to false except serverData (cookies and google Analytics were true before)
+
 ## [1.0.6](https://github.com/dword-design/get-privacy-policy/compare/v1.0.5...v1.0.6) (2023-04-09)
 
 
