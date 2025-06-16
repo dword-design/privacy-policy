@@ -1,6 +1,5 @@
 {
-  "name": "@dword-design/component",
-  "depcheckConfig": {
-    "ignoreMatches": ["@playwright/browser-chromium"]
-  }
+  "allowedMatches": ["playwright"],
+  "gitignore": ["/playwright/.cache"],
+  "name": "@dword-design/component"
 }

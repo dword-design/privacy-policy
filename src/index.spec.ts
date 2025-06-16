@@ -1,5 +1,6 @@
+import { expect, test } from '@playwright/experimental-ct-vue';
+
 import Self from './index.vue';
-import { test, expect } from '@playwright/experimental-ct-vue';
 
 const all = {
   contact: true,
@@ -9,16 +10,17 @@ const all = {
   firebaseCloudFunctions: true,
   firebaseCloudStorage: true,
   googleAnalytics: true,
+  matomo: true,
   newsletter: true,
   registration: true,
 };
 
 test('de', async ({ mount }) => {
-  const component = await mount(Self, { props: all });
-  await expect(component).toContainText('foo');
+  const component = await mount(Self, { props: { config: all, locale: 'de' } });
+  await expect(component).toHaveScreenshot();
 });
 
 test('en', async ({ mount }) => {
-  const component = await mount(Self, { props: all });
-  await expect(component).toContainText('foo');
+  const component = await mount(Self, { props: { config: all, locale: 'en' } });
+  await expect(component).toHaveScreenshot();
 });
