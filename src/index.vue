@@ -1002,7 +1002,7 @@
         Nutzungsverhaltens im Wege des sog. Opt-outs zu beenden. Mit dem
         Bestätigen des Links
       </p>
-      <p id="matomo-opt-out" />
+      <p id="matomo-opt-out" :class="computedConfig.matomo?.optOutContainerClasses" />
       <p>
         wird über Ihren Internet-Browser ein Cookie auf Ihrem Endgerät
         gespeichert, das die weitere Analyse verhindert. Bitte beachten Sie
@@ -1045,7 +1045,7 @@
         In addition, you have the option of terminating the analysis of your
         usage behavior by opting out. By confirming the link
       </p>
-      <p id="matomo-opt-out" />
+      <p id="matomo-opt-out" :class="computedConfig.matomo?.optOutContainerClasses" />
       <p>
         a cookie is stored on your device via your browser to prevent any
         further analysis. Please note, however, that you must click the above
