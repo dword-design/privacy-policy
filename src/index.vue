@@ -150,7 +150,8 @@
       data protection law is:
     </p>
     <p>
-      <app-address :locale="locale" /></p>
+      <app-address :locale="locale" />
+    </p>
     <p>
       Phone: {{ personalData.phoneNumber }}<br />
       Email: {{ personalData.email }}
