@@ -151,7 +151,7 @@
     </p>
     <p>
       <app-address
-        locale:locale="locale /></p>
+        :locale="locale /></p>
     <p>
       Phone: {{ personalData.phoneNumber }}<br />
       Email: {{ personalData.email }}
