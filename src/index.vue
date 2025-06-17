@@ -150,16 +150,13 @@
       data protection law is:
     </p>
     <p>
-      <app-address
-        :locale="locale /></p>
+      <app-address :locale="locale" /></p>
     <p>
       Phone: {{ personalData.phoneNumber }}<br />
       Email: {{ personalData.email }}
     </p>
     <p>The controller's data protection officer is:</p>
-    <p><app-address :locale="
-      />
-    </p>
+    <p><app-address :locale="locale" /></p>
     <p>
       Phone: {{ personalData.phoneNumber }}<br />
       Email: {{ personalData.email }}
