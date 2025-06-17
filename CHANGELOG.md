@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/dword-design/privacy-policy/compare/v2.0.1...v2.0.2) (2025-06-17)
+
+
+### Bug Fixes
+
+* fix snapshot ([a53e8f4](https://github.com/dword-design/privacy-policy/commit/a53e8f4b8e483150ad5d47376d441c38a0be06f8))
+* fix syntax ([1bde29e](https://github.com/dword-design/privacy-policy/commit/1bde29e220ef4c75486f972785b845b8cbc02278))
+* foo ([908bc09](https://github.com/dword-design/privacy-policy/commit/908bc09af3e7f0dc5a3eb54ef776d51ac3b62025))
+
 ## [2.0.1](https://github.com/dword-design/privacy-policy/compare/v2.0.0...v2.0.1) (2025-06-16)
 
 
