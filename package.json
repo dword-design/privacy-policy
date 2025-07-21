@@ -24,7 +24,7 @@
     "test:raw": "base test:raw"
   },
   "dependencies": {
-    "@dword-design/personal-data": "^2.0.3"
+    "@dword-design/personal-data": "^3.0.0"
   },
   "devDependencies": {
     "@dword-design/base": "^13.0.7",
