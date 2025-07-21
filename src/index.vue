@@ -1106,6 +1106,7 @@ const computedConfig = computed(() => ({
   firebaseCloudFunctions: false,
   firebaseCloudStorage: false,
   googleAnalytics: false,
+  googleTagManager: false,
   matomo: false,
   newsletter: false,
   registration: false,
