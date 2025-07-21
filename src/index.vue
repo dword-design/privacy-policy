@@ -1002,7 +1002,11 @@
       </p>
       <p
         id="matomo-opt-out"
-        :class="computedConfig.matomo?.optOutContainerClasses"
+        :class="
+          typeof computedConfig.matomo === 'object'
+            ? computedConfig.matomo.optOutContainerClasses
+            : undefined
+        "
       />
       <p>
         wird über Ihren Internet-Browser ein Cookie auf Ihrem Endgerät
@@ -1048,7 +1052,11 @@
       </p>
       <p
         id="matomo-opt-out"
-        :class="computedConfig.matomo?.optOutContainerClasses"
+        :class="
+          typeof computedConfig.matomo === 'object'
+            ? computedConfig.matomo.optOutContainerClasses
+            : undefined
+        "
       />
       <p>
         a cookie is stored on your device via your browser to prevent any
@@ -1092,10 +1100,24 @@ import { computed } from 'vue';
 
 import AppAddress from './address.vue';
 
-const props = defineProps({
-  config: { type: Object },
-  locale: { required: true, type: String },
-});
+type MatomoConfig = { optOutContainerClasses?: string };
+
+type Config = {
+  contact: boolean;
+  cookies: boolean;
+  firebaseAnalytics: boolean;
+  firebaseAuthentication: boolean;
+  firebaseCloudFirestore: boolean;
+  firebaseCloudFunctions: boolean;
+  firebaseCloudStorage: boolean;
+  googleAnalytics: boolean;
+  googleTagManager: boolean;
+  matomo: boolean | MatomoConfig;
+  newsletter: boolean;
+  registration: boolean;
+  serverData: boolean;
+};
+const props = defineProps<{ config?: Partial<Config>; locale: string }>();
 
 const computedConfig = computed(() => ({
   contact: false,
