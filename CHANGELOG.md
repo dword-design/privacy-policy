@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/dword-design/privacy-policy/compare/v2.0.2...v3.0.0) (2025-07-23)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#35](https://github.com/dword-design/privacy-policy/issues/35)) ([c9a6b52](https://github.com/dword-design/privacy-policy/commit/c9a6b52a9e3fc777132a3c6666e9618c27a49207))
+
+
+### BREAKING CHANGES
+
+* node.js >= 20
+
 ## [2.0.2](https://github.com/dword-design/privacy-policy/compare/v2.0.1...v2.0.2) (2025-06-17)
 
 
