@@ -1065,6 +1065,7 @@
       </p>
     </template>
   </template>
+  <slot v-bind="{ locale }" />
   <p v-if="locale === 'de'">
     <a
       href="https://leistungen/muster-datenschutzerklaerung.html"
