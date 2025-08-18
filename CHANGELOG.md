@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/dword-design/privacy-policy/compare/v3.0.0...v3.1.0) (2025-08-18)
+
+
+### Features
+
+* add default slot ([fbb1d1c](https://github.com/dword-design/privacy-policy/commit/fbb1d1c0fac1ab99872c5db67ea444323990e9cd))
+
 # [3.0.0](https://github.com/dword-design/privacy-policy/compare/v2.0.2...v3.0.0) (2025-07-23)
 
 
