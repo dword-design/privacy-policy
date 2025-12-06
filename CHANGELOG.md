@@ -1,3 +1,17 @@
+# [4.0.0](https://github.com/dword-design/privacy-policy/compare/v3.1.0...v4.0.0) (2025-12-06)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#40](https://github.com/dword-design/privacy-policy/issues/40)) ([2fc6040](https://github.com/dword-design/privacy-policy/commit/2fc60403c74c4f80686cd2b9ca5260f1911717e9))
+* trigger release ([7e32767](https://github.com/dword-design/privacy-policy/commit/7e327674a30613e28cebaee7c736a0b7eafe4ea6))
+* update pnpm to v10.24.0 ([#34](https://github.com/dword-design/privacy-policy/issues/34)) ([2d5df0f](https://github.com/dword-design/privacy-policy/commit/2d5df0ff3b10d5547a0e6c6d34614c7a3972db7c))
+
+
+### BREAKING CHANGES
+
+* node.js >= 22
+
 # [3.1.0](https://github.com/dword-design/privacy-policy/compare/v3.0.0...v3.1.0) (2025-08-18)
 
 
