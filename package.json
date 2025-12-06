@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@dword-design/base": "^15.1.6",
-    "@dword-design/base-config-component": "^6.0.0",
+    "@dword-design/base-config-component": "^7.0.0",
     "@playwright/browser-chromium": "^1.54.1",
     "@playwright/experimental-ct-vue": "^1.54.1"
   },
