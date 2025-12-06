@@ -5,7 +5,7 @@
   {{ locale === 'de' ? 'Deutschland' : 'Germany' }}
 </template>
 
-<script setup>
+<script setup lang="ts">
 import * as personalData from '@dword-design/personal-data';
 
 defineProps({ locale: { required: true, type: String } });
